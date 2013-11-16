@@ -25,7 +25,7 @@
     // Initialize the walks table view controller and add it
     WalksTableViewController *walksTable = [[WalksTableViewController alloc] init];
     [navigationController pushViewController:walksTable animated:NO];
-    
+
     return YES;
 }
 

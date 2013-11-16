@@ -7,6 +7,7 @@
 //
 
 #import "WalksTableViewController.h"
+#import "WalkOverviewViewController.h"
 
 @interface WalksTableViewController ()
 
@@ -67,8 +68,14 @@
     
     // Configure the cell...
     cell.textLabel.text = self.walksModel.walksArray[indexPath.row];
-    NSLog(@"cellForRowAtIndexPath: %d = %@", indexPath.row, cell.textLabel.text);
     return cell;
+}
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Test creating an overview view
+    WalkOverviewViewController *walkOverviewView = [[WalkOverviewViewController alloc] init];
+    walkOverviewView.walkName = [NSString stringWithFormat:@"Walk #%d", indexPath.row];
+    [self.navigationController pushViewController:walkOverviewView animated:YES];
 }
 
 /*
