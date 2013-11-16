@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C014AB8E1838353500E7BCB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C014AB8D1838353500E7BCB1 /* Foundation.framework */; };
+		C014AB901838353500E7BCB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C014AB8F1838353500E7BCB1 /* CoreGraphics.framework */; };
+		C014AB921838353500E7BCB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C014AB911838353500E7BCB1 /* UIKit.framework */; };
+		C014AB981838353500E7BCB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C014AB961838353500E7BCB1 /* InfoPlist.strings */; };
+		C014AB9A1838353500E7BCB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C014AB991838353500E7BCB1 /* main.m */; };
+		C014AB9E1838353500E7BCB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C014AB9D1838353500E7BCB1 /* AppDelegate.m */; };
+		C014ABA01838353500E7BCB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C014AB9F1838353500E7BCB1 /* Images.xcassets */; };
+		C014ABA71838353500E7BCB1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C014ABA61838353500E7BCB1 /* XCTest.framework */; };
+		C014ABA81838353500E7BCB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C014AB8D1838353500E7BCB1 /* Foundation.framework */; };
+		C014ABA91838353500E7BCB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C014AB911838353500E7BCB1 /* UIKit.framework */; };
+		C014ABB11838353500E7BCB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C014ABAF1838353500E7BCB1 /* InfoPlist.strings */; };
+		C014ABB31838353500E7BCB1 /* YouBigSAPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABB21838353500E7BCB1 /* YouBigSAPTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C014ABAA1838353500E7BCB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C014AB821838353500E7BCB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C014AB891838353500E7BCB1;
+			remoteInfo = YouBigSAP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C014AB8A1838353500E7BCB1 /* YouBigSAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouBigSAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C014AB8D1838353500E7BCB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C014AB8F1838353500E7BCB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C014AB911838353500E7BCB1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C014AB951838353500E7BCB1 /* YouBigSAP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YouBigSAP-Info.plist"; sourceTree = "<group>"; };
+		C014AB971838353500E7BCB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C014AB991838353500E7BCB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C014AB9B1838353500E7BCB1 /* YouBigSAP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YouBigSAP-Prefix.pch"; sourceTree = "<group>"; };
+		C014AB9C1838353500E7BCB1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C014AB9D1838353500E7BCB1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C014AB9F1838353500E7BCB1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C014ABA51838353500E7BCB1 /* YouBigSAPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouBigSAPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C014ABA61838353500E7BCB1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C014ABAE1838353500E7BCB1 /* YouBigSAPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YouBigSAPTests-Info.plist"; sourceTree = "<group>"; };
+		C014ABB01838353500E7BCB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C014ABB21838353500E7BCB1 /* YouBigSAPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouBigSAPTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C014AB871838353500E7BCB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C014AB901838353500E7BCB1 /* CoreGraphics.framework in Frameworks */,
+				C014AB921838353500E7BCB1 /* UIKit.framework in Frameworks */,
+				C014AB8E1838353500E7BCB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C014ABA21838353500E7BCB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C014ABA71838353500E7BCB1 /* XCTest.framework in Frameworks */,
+				C014ABA91838353500E7BCB1 /* UIKit.framework in Frameworks */,
+				C014ABA81838353500E7BCB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C014AB811838353500E7BCB1 = {
+			isa = PBXGroup;
+			children = (
+				C014AB931838353500E7BCB1 /* YouBigSAP */,
+				C014ABAC1838353500E7BCB1 /* YouBigSAPTests */,
+				C014AB8C1838353500E7BCB1 /* Frameworks */,
+				C014AB8B1838353500E7BCB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C014AB8B1838353500E7BCB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C014AB8A1838353500E7BCB1 /* YouBigSAP.app */,
+				C014ABA51838353500E7BCB1 /* YouBigSAPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C014AB8C1838353500E7BCB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C014AB8D1838353500E7BCB1 /* Foundation.framework */,
+				C014AB8F1838353500E7BCB1 /* CoreGraphics.framework */,
+				C014AB911838353500E7BCB1 /* UIKit.framework */,
+				C014ABA61838353500E7BCB1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C014AB931838353500E7BCB1 /* YouBigSAP */ = {
+			isa = PBXGroup;
+			children = (
+				C014AB9C1838353500E7BCB1 /* AppDelegate.h */,
+				C014AB9D1838353500E7BCB1 /* AppDelegate.m */,
+				C014AB9F1838353500E7BCB1 /* Images.xcassets */,
+				C014AB941838353500E7BCB1 /* Supporting Files */,
+			);
+			path = YouBigSAP;
+			sourceTree = "<group>";
+		};
+		C014AB941838353500E7BCB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C014AB951838353500E7BCB1 /* YouBigSAP-Info.plist */,
+				C014AB961838353500E7BCB1 /* InfoPlist.strings */,
+				C014AB991838353500E7BCB1 /* main.m */,
+				C014AB9B1838353500E7BCB1 /* YouBigSAP-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C014ABAC1838353500E7BCB1 /* YouBigSAPTests */ = {
+			isa = PBXGroup;
+			children = (
+				C014ABB21838353500E7BCB1 /* YouBigSAPTests.m */,
+				C014ABAD1838353500E7BCB1 /* Supporting Files */,
+			);
+			path = YouBigSAPTests;
+			sourceTree = "<group>";
+		};
+		C014ABAD1838353500E7BCB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C014ABAE1838353500E7BCB1 /* YouBigSAPTests-Info.plist */,
+				C014ABAF1838353500E7BCB1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C014AB891838353500E7BCB1 /* YouBigSAP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C014ABB61838353500E7BCB1 /* Build configuration list for PBXNativeTarget "YouBigSAP" */;
+			buildPhases = (
+				C014AB861838353500E7BCB1 /* Sources */,
+				C014AB871838353500E7BCB1 /* Frameworks */,
+				C014AB881838353500E7BCB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouBigSAP;
+			productName = YouBigSAP;
+			productReference = C014AB8A1838353500E7BCB1 /* YouBigSAP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C014ABA41838353500E7BCB1 /* YouBigSAPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C014ABB91838353500E7BCB1 /* Build configuration list for PBXNativeTarget "YouBigSAPTests" */;
+			buildPhases = (
+				C014ABA11838353500E7BCB1 /* Sources */,
+				C014ABA21838353500E7BCB1 /* Frameworks */,
+				C014ABA31838353500E7BCB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C014ABAB1838353500E7BCB1 /* PBXTargetDependency */,
+			);
+			name = YouBigSAPTests;
+			productName = YouBigSAPTests;
+			productReference = C014ABA51838353500E7BCB1 /* YouBigSAPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C014AB821838353500E7BCB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jean-Marc Skopek";
+				TargetAttributes = {
+					C014ABA41838353500E7BCB1 = {
+						TestTargetID = C014AB891838353500E7BCB1;
+					};
+				};
+			};
+			buildConfigurationList = C014AB851838353500E7BCB1 /* Build configuration list for PBXProject "YouBigSAP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C014AB811838353500E7BCB1;
+			productRefGroup = C014AB8B1838353500E7BCB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C014AB891838353500E7BCB1 /* YouBigSAP */,
+				C014ABA41838353500E7BCB1 /* YouBigSAPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C014AB881838353500E7BCB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C014AB981838353500E7BCB1 /* InfoPlist.strings in Resources */,
+				C014ABA01838353500E7BCB1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C014ABA31838353500E7BCB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C014ABB11838353500E7BCB1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C014AB861838353500E7BCB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C014AB9E1838353500E7BCB1 /* AppDelegate.m in Sources */,
+				C014AB9A1838353500E7BCB1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C014ABA11838353500E7BCB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C014ABB31838353500E7BCB1 /* YouBigSAPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C014ABAB1838353500E7BCB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C014AB891838353500E7BCB1 /* YouBigSAP */;
+			targetProxy = C014ABAA1838353500E7BCB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C014AB961838353500E7BCB1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C014AB971838353500E7BCB1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C014ABAF1838353500E7BCB1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C014ABB01838353500E7BCB1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C014ABB41838353500E7BCB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C014ABB51838353500E7BCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C014ABB71838353500E7BCB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YouBigSAP/YouBigSAP-Prefix.pch";
+				INFOPLIST_FILE = "YouBigSAP/YouBigSAP-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C014ABB81838353500E7BCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YouBigSAP/YouBigSAP-Prefix.pch";
+				INFOPLIST_FILE = "YouBigSAP/YouBigSAP-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C014ABBA1838353500E7BCB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YouBigSAP.app/YouBigSAP";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YouBigSAP/YouBigSAP-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YouBigSAPTests/YouBigSAPTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C014ABBB1838353500E7BCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YouBigSAP.app/YouBigSAP";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YouBigSAP/YouBigSAP-Prefix.pch";
+				INFOPLIST_FILE = "YouBigSAPTests/YouBigSAPTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C014AB851838353500E7BCB1 /* Build configuration list for PBXProject "YouBigSAP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C014ABB41838353500E7BCB1 /* Debug */,
+				C014ABB51838353500E7BCB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C014ABB61838353500E7BCB1 /* Build configuration list for PBXNativeTarget "YouBigSAP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C014ABB71838353500E7BCB1 /* Debug */,
+				C014ABB81838353500E7BCB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C014ABB91838353500E7BCB1 /* Build configuration list for PBXNativeTarget "YouBigSAPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C014ABBA1838353500E7BCB1 /* Debug */,
+				C014ABBB1838353500E7BCB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C014AB821838353500E7BCB1 /* Project object */;
+}
