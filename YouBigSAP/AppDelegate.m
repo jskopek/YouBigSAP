@@ -17,10 +17,14 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+ 
+    // Initialize a navigation controller
+    UINavigationController *navigationController = [[UINavigationController alloc] init];
+    [self.window setRootViewController:navigationController];
     
     // Initialize the walks table view controller and add it
     WalksTableViewController *walksTable = [[WalksTableViewController alloc] init];
-    [self.window setRootViewController:walksTable];
+    [navigationController pushViewController:walksTable animated:NO];
     
     return YES;
 }
