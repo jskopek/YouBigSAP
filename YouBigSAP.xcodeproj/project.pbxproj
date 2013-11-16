@@ -19,6 +19,8 @@
 		C014ABA91838353500E7BCB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C014AB911838353500E7BCB1 /* UIKit.framework */; };
 		C014ABB11838353500E7BCB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C014ABAF1838353500E7BCB1 /* InfoPlist.strings */; };
 		C014ABB31838353500E7BCB1 /* YouBigSAPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABB21838353500E7BCB1 /* YouBigSAPTests.m */; };
+		C014ABBE1838364500E7BCB1 /* WalksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABBD1838364500E7BCB1 /* WalksTableViewController.m */; };
+		C014ABC1183836BB00E7BCB1 /* WalksModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABC0183836BB00E7BCB1 /* WalksModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		C014ABAE1838353500E7BCB1 /* YouBigSAPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YouBigSAPTests-Info.plist"; sourceTree = "<group>"; };
 		C014ABB01838353500E7BCB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C014ABB21838353500E7BCB1 /* YouBigSAPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouBigSAPTests.m; sourceTree = "<group>"; };
+		C014ABBC1838364500E7BCB1 /* WalksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalksTableViewController.h; sourceTree = "<group>"; };
+		C014ABBD1838364500E7BCB1 /* WalksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalksTableViewController.m; sourceTree = "<group>"; };
+		C014ABBF183836BB00E7BCB1 /* WalksModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalksModel.h; sourceTree = "<group>"; };
+		C014ABC0183836BB00E7BCB1 /* WalksModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalksModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,10 @@
 		C014AB931838353500E7BCB1 /* YouBigSAP */ = {
 			isa = PBXGroup;
 			children = (
+				C014ABBF183836BB00E7BCB1 /* WalksModel.h */,
+				C014ABC0183836BB00E7BCB1 /* WalksModel.m */,
+				C014ABBC1838364500E7BCB1 /* WalksTableViewController.h */,
+				C014ABBD1838364500E7BCB1 /* WalksTableViewController.m */,
 				C014AB9C1838353500E7BCB1 /* AppDelegate.h */,
 				C014AB9D1838353500E7BCB1 /* AppDelegate.m */,
 				C014AB9F1838353500E7BCB1 /* Images.xcassets */,
@@ -239,7 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C014ABBE1838364500E7BCB1 /* WalksTableViewController.m in Sources */,
 				C014AB9E1838353500E7BCB1 /* AppDelegate.m in Sources */,
+				C014ABC1183836BB00E7BCB1 /* WalksModel.m in Sources */,
 				C014AB9A1838353500E7BCB1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
