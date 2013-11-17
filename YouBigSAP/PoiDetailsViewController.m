@@ -48,6 +48,7 @@
     // Add walk image
     UIImageView *poiImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed:self.poi.pictureLocation]];
     poiImage.frame = CGRectMake(0, 0, 320, 220);
+    [poiImage setContentMode:UIViewContentModeScaleToFill];
     [scrollView addSubview:poiImage];
     
     // Add a label with the walk name
@@ -63,6 +64,7 @@
     poiDescription.frame = CGRectMake(10, 230, 300, 0);
     poiDescription.scrollEnabled = NO;
     poiDescription.text = self.poi.description;
+    [poiDescription setFont:[UIFont systemFontOfSize:16]];
     [poiDescription sizeToFit];
     [poiDescription setEditable:NO];
     

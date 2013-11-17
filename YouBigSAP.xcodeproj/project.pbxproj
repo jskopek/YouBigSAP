@@ -48,6 +48,10 @@
 		C0B2477618391155006E2D58 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B2476318391155006E2D58 /* UIImageView+AFNetworking.m */; };
 		C0B2477718391155006E2D58 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B2476618391155006E2D58 /* UIProgressView+AFNetworking.m */; };
 		C0B2477818391155006E2D58 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B2476818391155006E2D58 /* UIWebView+AFNetworking.m */; };
+		C0B2477C183963CC006E2D58 /* poi4.png in Resources */ = {isa = PBXBuildFile; fileRef = C0B24779183963CC006E2D58 /* poi4.png */; };
+		C0B2477D183963CC006E2D58 /* poi5.png in Resources */ = {isa = PBXBuildFile; fileRef = C0B2477A183963CC006E2D58 /* poi5.png */; };
+		C0B2477E183963CC006E2D58 /* poi3.png in Resources */ = {isa = PBXBuildFile; fileRef = C0B2477B183963CC006E2D58 /* poi3.png */; };
+		C0B247801839648B006E2D58 /* poi6.png in Resources */ = {isa = PBXBuildFile; fileRef = C0B2477F1839648B006E2D58 /* poi6.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +135,10 @@
 		C0B2476618391155006E2D58 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		C0B2476718391155006E2D58 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		C0B2476818391155006E2D58 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		C0B24779183963CC006E2D58 /* poi4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poi4.png; sourceTree = "<group>"; };
+		C0B2477A183963CC006E2D58 /* poi5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poi5.png; sourceTree = "<group>"; };
+		C0B2477B183963CC006E2D58 /* poi3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poi3.png; sourceTree = "<group>"; };
+		C0B2477F1839648B006E2D58 /* poi6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poi6.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +224,10 @@
 		C014AB941838353500E7BCB1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C0B2477F1839648B006E2D58 /* poi6.png */,
+				C0B24779183963CC006E2D58 /* poi4.png */,
+				C0B2477A183963CC006E2D58 /* poi5.png */,
+				C0B2477B183963CC006E2D58 /* poi3.png */,
 				C0B247431838FF9A006E2D58 /* gastown.jpg */,
 				C0B2473C1838B698006E2D58 /* poi1.png */,
 				C0B2473D1838B698006E2D58 /* poi2.png */,
@@ -385,9 +397,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B2477D183963CC006E2D58 /* poi5.png in Resources */,
 				C0B2473E1838B698006E2D58 /* poi1.png in Resources */,
+				C0B2477E183963CC006E2D58 /* poi3.png in Resources */,
 				C0B2473F1838B698006E2D58 /* poi2.png in Resources */,
+				C0B2477C183963CC006E2D58 /* poi4.png in Resources */,
 				C014AB981838353500E7BCB1 /* InfoPlist.strings in Resources */,
+				C0B247801839648B006E2D58 /* poi6.png in Resources */,
 				C0B247441838FF9A006E2D58 /* gastown.jpg in Resources */,
 				C014ABA01838353500E7BCB1 /* Images.xcassets in Resources */,
 				C014ABCD18385A7D00E7BCB1 /* walk_placeholder.jpg in Resources */,

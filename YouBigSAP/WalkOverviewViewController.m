@@ -54,6 +54,7 @@
     // Add walk image
     UIImageView *walkImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed:self.walk.pictureLocation]];
     walkImage.frame = CGRectMake(0, 0, 320, 220);
+    [walkImage setContentMode:UIViewContentModeScaleToFill];
     [scrollView addSubview:walkImage];
     
     // Add a label with the walk name
@@ -76,6 +77,7 @@
     walkDescription.frame = CGRectMake(10, 270, 300, 0);
     walkDescription.scrollEnabled = NO;
     walkDescription.text = self.walk.description;
+    [walkDescription setFont:[UIFont systemFontOfSize:16]];
     [walkDescription sizeToFit];
     [walkDescription setEditable:NO];
     
