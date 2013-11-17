@@ -11,7 +11,7 @@
 @interface Walk : NSObject
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *description;
-@property (strong, nonatomic) UIImage *picture;
+@property (strong, nonatomic) NSString *pictureLocation;
 @property (strong, nonatomic) NSArray *pois;
 -(id) initWithName:(NSString *)aName;
 @end

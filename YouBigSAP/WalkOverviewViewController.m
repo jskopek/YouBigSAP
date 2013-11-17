@@ -43,11 +43,37 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    // Set up a scrollview
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    scrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    scrollView.contentSize = CGSizeMake(320, 680);
+    [self.view addSubview:scrollView];
+    
+    // Add walk image
+    UIImageView *walkImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed:self.walk.pictureLocation]];
+    walkImage.frame = CGRectMake(0, 0, 320, 220);
+    [scrollView addSubview:walkImage];
+    
     // Add a label with the walk name
     UILabel *walkNameLabel = [[UILabel alloc] init];
-    walkNameLabel.frame = CGRectMake(0, 0, 320, 50);
+    walkNameLabel.frame = CGRectMake(10, 180, 320, 40);
     walkNameLabel.text = self.walk.name;
-    [self.view addSubview:walkNameLabel];
+    walkNameLabel.textColor = [UIColor whiteColor];
+    walkNameLabel.font = [UIFont boldSystemFontOfSize:20];
+    [scrollView addSubview:walkNameLabel];
+    
+    // Add a description field
+    UITextView *walkDescription = [[UITextView alloc] init];
+    walkDescription.frame = CGRectMake(10, 230, 300, 0);
+    walkDescription.scrollEnabled = NO;
+    walkDescription.text = self.walk.description;
+    [walkDescription sizeToFit];
+    
+    // resize the scrollview
+    CGFloat newHeight = walkDescription.frame.origin.y + walkDescription.bounds.size.height;
+    scrollView.contentSize = CGSizeMake(320, newHeight);
+
+    [scrollView addSubview:walkDescription];
 }
 
 - (void)didReceiveMemoryWarning
