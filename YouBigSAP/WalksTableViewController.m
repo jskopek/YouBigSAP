@@ -22,7 +22,9 @@
     if (self) {
         // Custom initialization
         self.title = @"Walks";
-        self.walksModel = [[WalksModel alloc] initFromServer];
+        NSString *serverURL = @"http://localhost:8000/walks";
+        serverURL = @"http://explorethecity.herokuapp.com/walks";
+        self.walksModel = [[WalksModel alloc] initFromServer:serverURL];
         
         // Update the table view when data is returned from the server
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initializedFromServer) name:@"initFromServerFinishedLoading" object:nil];

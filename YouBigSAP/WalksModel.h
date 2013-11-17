@@ -10,5 +10,5 @@
 
 @interface WalksModel : NSObject
 @property (strong, nonatomic) NSArray *walksArray;
--(id)initFromServer;
+-(id)initFromServer:(NSString *)serverURL;
 @end

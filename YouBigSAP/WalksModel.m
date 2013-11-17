@@ -11,14 +11,14 @@
 #import "AFNetworking.h"
 
 @implementation WalksModel
--(id)initFromServer
+-(id)initFromServer:(NSString *)serverURL
 {
     self = [super init];
     if( self )
     {
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         
-        [manager GET:@"http://localhost:8000/walks" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [manager GET:serverURL parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
 
             // initialize an array of walks
             NSMutableArray *walks = [[NSMutableArray alloc] init];

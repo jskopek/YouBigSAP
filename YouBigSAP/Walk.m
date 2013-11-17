@@ -55,6 +55,11 @@
 }
 -(MKCoordinateRegion) poiCoordinateRegionWithPadding:(double)padding
 {
+    if(self.pois.count == 0)
+    {
+        return MKCoordinateRegionMake(CLLocationCoordinate2DMake(0, 0), MKCoordinateSpanMake(0, 0));
+    }
+
     NSMutableArray *lats = [[NSMutableArray alloc] init];
     NSMutableArray *lngs = [[NSMutableArray alloc] init];
     for(POI *aPOI in self.pois)

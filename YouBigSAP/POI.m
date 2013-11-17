@@ -28,7 +28,7 @@
     {
         self.name = JSON[@"name"];
         self.description = JSON[@"description"];
-        self.pictureLocation = JSON[@"picureLocation"];
+        self.pictureLocation = JSON[@"pictureLocation"];
         self.latitude = JSON[@"latitude"];
         self.longitude = JSON[@"longitude"];
         self.coordinate = CLLocationCoordinate2DMake([self.latitude doubleValue], [self.longitude doubleValue]);
