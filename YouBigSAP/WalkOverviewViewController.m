@@ -77,6 +77,7 @@
     walkDescription.scrollEnabled = NO;
     walkDescription.text = self.walk.description;
     [walkDescription sizeToFit];
+    [walkDescription setEditable:NO];
     
     // resize the scrollview
     CGFloat newHeight = walkDescription.frame.origin.y + walkDescription.bounds.size.height;
