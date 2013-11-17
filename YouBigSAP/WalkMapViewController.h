@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Walk.h"
+#import "MapKit/MapKit.h"
 
-@interface WalkMapViewController : UIViewController
+@interface WalkMapViewController : UIViewController <MKMapViewDelegate>
 @property (strong, nonatomic) Walk *walk;
 -(id)initWithWalk:(Walk *)aWalk;
 @end

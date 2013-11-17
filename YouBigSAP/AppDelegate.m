@@ -29,10 +29,10 @@
     WalksTableViewController *walksTable = [[WalksTableViewController alloc] init];
     [navigationController pushViewController:walksTable animated:NO];
     
-    // Debugger
-    Walk *aWalk = [[Walk alloc] initWithName:@"Test Name"];
-    WalkMapViewController *walkMapView = [[WalkMapViewController alloc] initWithWalk:aWalk];
-    [navigationController pushViewController:walkMapView animated:YES];
+//    // Debugger
+//    Walk *aWalk = [[Walk alloc] initWithName:@"Test Name"];
+//    WalkMapViewController *walkMapView = [[WalkMapViewController alloc] initWithWalk:aWalk];
+//    [navigationController pushViewController:walkMapView animated:YES];
     
 
     return YES;

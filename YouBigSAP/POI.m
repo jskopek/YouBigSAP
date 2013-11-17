@@ -17,6 +17,7 @@
         self.name = @"Placeholder name";
         self.latitude = [NSNumber numberWithDouble:aLatitude];
         self.longitude = [NSNumber numberWithDouble:aLongitude];
+        self.coordinate = CLLocationCoordinate2DMake([self.latitude doubleValue], [self.longitude doubleValue]);
     }
     return self;
 }

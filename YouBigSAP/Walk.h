@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
 @interface Walk : NSObject
 @property (strong, nonatomic) NSString *name;
@@ -14,4 +15,5 @@
 @property (strong, nonatomic) NSString *pictureLocation;
 @property (strong, nonatomic) NSArray *pois;
 -(id) initWithName:(NSString *)aName;
+-(MKCoordinateRegion) poiCoordinateRegionWithPadding:(double)padding;
 @end

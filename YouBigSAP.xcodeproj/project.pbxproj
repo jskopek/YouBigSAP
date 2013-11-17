@@ -26,6 +26,12 @@
 		C014ABCB1838550200E7BCB1 /* POI.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABCA1838550200E7BCB1 /* POI.m */; };
 		C014ABCD18385A7D00E7BCB1 /* walk_placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C014ABCC18385A7D00E7BCB1 /* walk_placeholder.jpg */; };
 		C014ABD0183871D600E7BCB1 /* WalkMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABCF183871D600E7BCB1 /* WalkMapViewController.m */; };
+		C014ABD2183887B800E7BCB1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C014ABD1183887B800E7BCB1 /* MapKit.framework */; };
+		C014ABD4183887C300E7BCB1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C014ABD3183887C300E7BCB1 /* CoreLocation.framework */; };
+		C0B2473E1838B698006E2D58 /* poi1.png in Resources */ = {isa = PBXBuildFile; fileRef = C0B2473C1838B698006E2D58 /* poi1.png */; };
+		C0B2473F1838B698006E2D58 /* poi2.png in Resources */ = {isa = PBXBuildFile; fileRef = C0B2473D1838B698006E2D58 /* poi2.png */; };
+		C0B247421838B793006E2D58 /* PoiDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B247411838B793006E2D58 /* PoiDetailsViewController.m */; };
+		C0B247441838FF9A006E2D58 /* gastown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0B247431838FF9A006E2D58 /* gastown.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,13 @@
 		C014ABCC18385A7D00E7BCB1 /* walk_placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = walk_placeholder.jpg; sourceTree = "<group>"; };
 		C014ABCE183871D600E7BCB1 /* WalkMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkMapViewController.h; sourceTree = "<group>"; };
 		C014ABCF183871D600E7BCB1 /* WalkMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkMapViewController.m; sourceTree = "<group>"; };
+		C014ABD1183887B800E7BCB1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C014ABD3183887C300E7BCB1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C0B2473C1838B698006E2D58 /* poi1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poi1.png; sourceTree = "<group>"; };
+		C0B2473D1838B698006E2D58 /* poi2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poi2.png; sourceTree = "<group>"; };
+		C0B247401838B793006E2D58 /* PoiDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiDetailsViewController.h; sourceTree = "<group>"; };
+		C0B247411838B793006E2D58 /* PoiDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiDetailsViewController.m; sourceTree = "<group>"; };
+		C0B247431838FF9A006E2D58 /* gastown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gastown.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C014ABD4183887C300E7BCB1 /* CoreLocation.framework in Frameworks */,
+				C014ABD2183887B800E7BCB1 /* MapKit.framework in Frameworks */,
 				C014AB901838353500E7BCB1 /* CoreGraphics.framework in Frameworks */,
 				C014AB921838353500E7BCB1 /* UIKit.framework in Frameworks */,
 				C014AB8E1838353500E7BCB1 /* Foundation.framework in Frameworks */,
@@ -116,6 +131,8 @@
 		C014AB8C1838353500E7BCB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C014ABD3183887C300E7BCB1 /* CoreLocation.framework */,
+				C014ABD1183887B800E7BCB1 /* MapKit.framework */,
 				C014AB8D1838353500E7BCB1 /* Foundation.framework */,
 				C014AB8F1838353500E7BCB1 /* CoreGraphics.framework */,
 				C014AB911838353500E7BCB1 /* UIKit.framework */,
@@ -131,6 +148,8 @@
 				C014ABC218383B6B00E7BCB1 /* WalkOverviewViewController.h */,
 				C014ABC318383B6B00E7BCB1 /* WalkOverviewViewController.m */,
 				C014ABBC1838364500E7BCB1 /* WalksTableViewController.h */,
+				C0B247401838B793006E2D58 /* PoiDetailsViewController.h */,
+				C0B247411838B793006E2D58 /* PoiDetailsViewController.m */,
 				C014ABCE183871D600E7BCB1 /* WalkMapViewController.h */,
 				C014ABCF183871D600E7BCB1 /* WalkMapViewController.m */,
 				C014ABBD1838364500E7BCB1 /* WalksTableViewController.m */,
@@ -145,6 +164,9 @@
 		C014AB941838353500E7BCB1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C0B247431838FF9A006E2D58 /* gastown.jpg */,
+				C0B2473C1838B698006E2D58 /* poi1.png */,
+				C0B2473D1838B698006E2D58 /* poi2.png */,
 				C014AB951838353500E7BCB1 /* YouBigSAP-Info.plist */,
 				C014ABCC18385A7D00E7BCB1 /* walk_placeholder.jpg */,
 				C014AB961838353500E7BCB1 /* InfoPlist.strings */,
@@ -263,7 +285,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B2473E1838B698006E2D58 /* poi1.png in Resources */,
+				C0B2473F1838B698006E2D58 /* poi2.png in Resources */,
 				C014AB981838353500E7BCB1 /* InfoPlist.strings in Resources */,
+				C0B247441838FF9A006E2D58 /* gastown.jpg in Resources */,
 				C014ABA01838353500E7BCB1 /* Images.xcassets in Resources */,
 				C014ABCD18385A7D00E7BCB1 /* walk_placeholder.jpg in Resources */,
 			);
@@ -292,6 +317,7 @@
 				C014ABC1183836BB00E7BCB1 /* WalksModel.m in Sources */,
 				C014ABD0183871D600E7BCB1 /* WalkMapViewController.m in Sources */,
 				C014AB9A1838353500E7BCB1 /* main.m in Sources */,
+				C0B247421838B793006E2D58 /* PoiDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +524,7 @@
 				C014ABB81838353500E7BCB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C014ABB91838353500E7BCB1 /* Build configuration list for PBXNativeTarget "YouBigSAPTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +533,7 @@
 				C014ABBB1838353500E7BCB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
