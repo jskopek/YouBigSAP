@@ -7,6 +7,7 @@
 //
 
 #import "WalkMapViewController.h"
+#import "POI.h"
 
 @interface WalkMapViewController ()
 
@@ -23,14 +24,24 @@
     }
     return self;
 }
-
+- (id)initWithWalk:(Walk *)aWalk
+{
+    self = [super init];
+    if( self )
+    {
+        self.walk = aWalk;
+    }
+    return self;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 	// Do any additional setup after loading the view.
     UILabel *myLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 50, 200, 200)];
-    myLabel.text = @"WalkMapViewController";
+    
+    POI *aPOI = self.walk.pois[0];
+    myLabel.text = [NSString stringWithFormat:@"latitude: %@ longitude: %@", aPOI.latitude, aPOI.longitude];
     [self.view addSubview:myLabel];
 }
 

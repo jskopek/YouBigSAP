@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Walk.h"
 
 @interface WalkMapViewController : UIViewController
-
+@property (strong, nonatomic) Walk *walk;
+-(id)initWithWalk:(Walk *)aWalk;
 @end

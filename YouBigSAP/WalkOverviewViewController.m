@@ -87,7 +87,7 @@
 }
 - (void)showMap
 {
-    WalkMapViewController *mapView = [[WalkMapViewController alloc] init];
+    WalkMapViewController *mapView = [[WalkMapViewController alloc] initWithWalk:self.walk];
     [self.navigationController pushViewController:mapView animated:YES];
 }
 - (void)didReceiveMemoryWarning

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "WalksTableViewController.h"
+#import "Walk.h"
+#import "WalkMapViewController.h"
 
 @implementation AppDelegate
 
@@ -26,6 +28,12 @@
     // Initialize the walks table view controller and add it
     WalksTableViewController *walksTable = [[WalksTableViewController alloc] init];
     [navigationController pushViewController:walksTable animated:NO];
+    
+    // Debugger
+    Walk *aWalk = [[Walk alloc] initWithName:@"Test Name"];
+    WalkMapViewController *walkMapView = [[WalkMapViewController alloc] initWithWalk:aWalk];
+    [navigationController pushViewController:walkMapView animated:YES];
+    
 
     return YES;
 }
