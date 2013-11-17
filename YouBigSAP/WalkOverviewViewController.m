@@ -7,6 +7,7 @@
 //
 
 #import "WalkOverviewViewController.h"
+#import "WalkMapViewController.h"
 
 @interface WalkOverviewViewController ()
 
@@ -85,7 +86,8 @@
 }
 - (void)showMap
 {
-    NSLog(@"Show Map");
+    WalkMapViewController *mapView = [[WalkMapViewController alloc] init];
+    [self.navigationController pushViewController:mapView animated:YES];
 }
 - (void)didReceiveMemoryWarning
 {

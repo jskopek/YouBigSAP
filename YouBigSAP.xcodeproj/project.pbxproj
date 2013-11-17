@@ -25,6 +25,7 @@
 		C014ABC718383E3B00E7BCB1 /* Walk.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABC618383E3B00E7BCB1 /* Walk.m */; };
 		C014ABCB1838550200E7BCB1 /* POI.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABCA1838550200E7BCB1 /* POI.m */; };
 		C014ABCD18385A7D00E7BCB1 /* walk_placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C014ABCC18385A7D00E7BCB1 /* walk_placeholder.jpg */; };
+		C014ABD0183871D600E7BCB1 /* WalkMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABCF183871D600E7BCB1 /* WalkMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		C014ABC91838550200E7BCB1 /* POI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POI.h; sourceTree = "<group>"; };
 		C014ABCA1838550200E7BCB1 /* POI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POI.m; sourceTree = "<group>"; };
 		C014ABCC18385A7D00E7BCB1 /* walk_placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = walk_placeholder.jpg; sourceTree = "<group>"; };
+		C014ABCE183871D600E7BCB1 /* WalkMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkMapViewController.h; sourceTree = "<group>"; };
+		C014ABCF183871D600E7BCB1 /* WalkMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				C014ABC218383B6B00E7BCB1 /* WalkOverviewViewController.h */,
 				C014ABC318383B6B00E7BCB1 /* WalkOverviewViewController.m */,
 				C014ABBC1838364500E7BCB1 /* WalksTableViewController.h */,
+				C014ABCE183871D600E7BCB1 /* WalkMapViewController.h */,
+				C014ABCF183871D600E7BCB1 /* WalkMapViewController.m */,
 				C014ABBD1838364500E7BCB1 /* WalksTableViewController.m */,
 				C014AB9C1838353500E7BCB1 /* AppDelegate.h */,
 				C014AB9D1838353500E7BCB1 /* AppDelegate.m */,
@@ -285,6 +290,7 @@
 				C014ABBE1838364500E7BCB1 /* WalksTableViewController.m in Sources */,
 				C014AB9E1838353500E7BCB1 /* AppDelegate.m in Sources */,
 				C014ABC1183836BB00E7BCB1 /* WalksModel.m in Sources */,
+				C014ABD0183871D600E7BCB1 /* WalkMapViewController.m in Sources */,
 				C014AB9A1838353500E7BCB1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
