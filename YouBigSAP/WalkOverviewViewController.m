@@ -19,6 +19,11 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        if([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        {
+            //http://www.brianjcoleman.com/ios7-weve-got-a-problem/
+            self.edgesForExtendedLayout = UIRectEdgeNone;
+        }
     }
     return self;
 }
@@ -40,7 +45,7 @@
     
     // Add a label with the walk name
     UILabel *walkNameLabel = [[UILabel alloc] init];
-    walkNameLabel.frame = CGRectMake(0, 100, 320, 50);
+    walkNameLabel.frame = CGRectMake(0, 0, 320, 50);
     walkNameLabel.text = self.walk.name;
     [self.view addSubview:walkNameLabel];
 }

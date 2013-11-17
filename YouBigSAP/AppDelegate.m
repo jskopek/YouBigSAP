@@ -20,6 +20,7 @@
  
     // Initialize a navigation controller
     UINavigationController *navigationController = [[UINavigationController alloc] init];
+    [navigationController.view setAutoresizesSubviews:YES];
     [self.window setRootViewController:navigationController];
     
     // Initialize the walks table view controller and add it

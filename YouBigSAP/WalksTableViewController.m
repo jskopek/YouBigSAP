@@ -77,6 +77,7 @@
     // Test creating an overview view
     Walk *aWalk = self.walksModel.walksArray[indexPath.row];
     WalkOverviewViewController *walkOverviewView = [[WalkOverviewViewController alloc] initWithWalk:aWalk];
+//    walkOverviewView.view.autoresizingMask
     [self.navigationController pushViewController:walkOverviewView animated:YES];
 }
 
