@@ -28,8 +28,17 @@
         
         // Update the table view when data is returned from the server
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initializedFromServer) name:@"initFromServerFinishedLoading" object:nil];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appFocused) name:@"UIApplicationWillEnterForegroundNotification" object:nil];
     }
     return self;
+}
+- (void)appFocused
+{
+    NSString *serverURL = @"http://localhost:8000/walks";
+    serverURL = @"http://explorethecity.herokuapp.com/walks";
+    self.walksModel = [[WalksModel alloc] initFromServer:serverURL];
+    
 }
 - (void)initializedFromServer
 {

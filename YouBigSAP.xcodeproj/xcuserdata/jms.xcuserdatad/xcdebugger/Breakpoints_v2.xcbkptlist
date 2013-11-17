@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YouBigSAP/WalksModel.m"
-            timestampString = "406394630.18302"
+            timestampString = "406409415.025036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "-initFromServer:"
             landmarkType = "5">
          </BreakpointContent>
