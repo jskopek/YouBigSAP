@@ -22,6 +22,7 @@
 		C014ABBE1838364500E7BCB1 /* WalksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABBD1838364500E7BCB1 /* WalksTableViewController.m */; };
 		C014ABC1183836BB00E7BCB1 /* WalksModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABC0183836BB00E7BCB1 /* WalksModel.m */; };
 		C014ABC418383B6B00E7BCB1 /* WalkOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABC318383B6B00E7BCB1 /* WalkOverviewViewController.m */; };
+		C014ABC718383E3B00E7BCB1 /* Walk.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABC618383E3B00E7BCB1 /* Walk.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		C014ABC0183836BB00E7BCB1 /* WalksModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalksModel.m; sourceTree = "<group>"; };
 		C014ABC218383B6B00E7BCB1 /* WalkOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkOverviewViewController.h; sourceTree = "<group>"; };
 		C014ABC318383B6B00E7BCB1 /* WalkOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkOverviewViewController.m; sourceTree = "<group>"; };
+		C014ABC518383E3B00E7BCB1 /* Walk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Walk.h; sourceTree = "<group>"; };
+		C014ABC618383E3B00E7BCB1 /* Walk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Walk.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +119,9 @@
 		C014AB931838353500E7BCB1 /* YouBigSAP */ = {
 			isa = PBXGroup;
 			children = (
+				C014ABC818383E4000E7BCB1 /* Models */,
 				C014ABC218383B6B00E7BCB1 /* WalkOverviewViewController.h */,
 				C014ABC318383B6B00E7BCB1 /* WalkOverviewViewController.m */,
-				C014ABBF183836BB00E7BCB1 /* WalksModel.h */,
-				C014ABC0183836BB00E7BCB1 /* WalksModel.m */,
 				C014ABBC1838364500E7BCB1 /* WalksTableViewController.h */,
 				C014ABBD1838364500E7BCB1 /* WalksTableViewController.m */,
 				C014AB9C1838353500E7BCB1 /* AppDelegate.h */,
@@ -157,6 +159,17 @@
 				C014ABAF1838353500E7BCB1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C014ABC818383E4000E7BCB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C014ABBF183836BB00E7BCB1 /* WalksModel.h */,
+				C014ABC0183836BB00E7BCB1 /* WalksModel.m */,
+				C014ABC518383E3B00E7BCB1 /* Walk.h */,
+				C014ABC618383E3B00E7BCB1 /* Walk.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C014ABC718383E3B00E7BCB1 /* Walk.m in Sources */,
 				C014ABC418383B6B00E7BCB1 /* WalkOverviewViewController.m in Sources */,
 				C014ABBE1838364500E7BCB1 /* WalksTableViewController.m in Sources */,
 				C014AB9E1838353500E7BCB1 /* AppDelegate.m in Sources */,

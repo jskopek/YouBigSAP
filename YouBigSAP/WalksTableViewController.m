@@ -8,6 +8,7 @@
 
 #import "WalksTableViewController.h"
 #import "WalkOverviewViewController.h"
+#import "Walk.h"
 
 @interface WalksTableViewController ()
 
@@ -67,7 +68,8 @@
     }
     
     // Configure the cell...
-    cell.textLabel.text = self.walksModel.walksArray[indexPath.row];
+    Walk *aWalk = self.walksModel.walksArray[indexPath.row];
+    cell.textLabel.text = aWalk.name;
     return cell;
 }
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
