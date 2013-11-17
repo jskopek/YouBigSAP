@@ -75,8 +75,8 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Test creating an overview view
-    WalkOverviewViewController *walkOverviewView = [[WalkOverviewViewController alloc] init];
-    walkOverviewView.walkName = [NSString stringWithFormat:@"Walk #%d", indexPath.row];
+    Walk *aWalk = self.walksModel.walksArray[indexPath.row];
+    WalkOverviewViewController *walkOverviewView = [[WalkOverviewViewController alloc] initWithWalk:aWalk];
     [self.navigationController pushViewController:walkOverviewView animated:YES];
 }
 

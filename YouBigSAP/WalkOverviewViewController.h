@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Walk.h"
 
 @interface WalkOverviewViewController : UIViewController
-@property (strong, nonatomic) NSString *walkName;
+@property (strong, nonatomic) Walk *walk;
+-(id) initWithWalk:(Walk *)aWalk;
 @end

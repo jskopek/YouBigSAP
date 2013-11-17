@@ -23,6 +23,16 @@
     return self;
 }
 
+- (id)initWithWalk:(Walk *)aWalk
+{
+    self = [super init];
+    if( self )
+    {
+        self.walk = aWalk;
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,7 +41,7 @@
     // Add a label with the walk name
     UILabel *walkNameLabel = [[UILabel alloc] init];
     walkNameLabel.frame = CGRectMake(0, 100, 320, 50);
-    walkNameLabel.text = self.walkName;
+    walkNameLabel.text = self.walk.name;
     [self.view addSubview:walkNameLabel];
 }
 
