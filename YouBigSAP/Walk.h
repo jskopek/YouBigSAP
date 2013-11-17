@@ -14,6 +14,7 @@
 @property (strong, nonatomic) NSString *description;
 @property (strong, nonatomic) NSString *pictureLocation;
 @property (strong, nonatomic) NSArray *pois;
--(id) initWithName:(NSString *)aName;
+//-(id) initWithName:(NSString *)aName;
+-(id) initWIthJSON: (NSDictionary *)JSON;
 -(MKCoordinateRegion) poiCoordinateRegionWithPadding:(double)padding;
 @end

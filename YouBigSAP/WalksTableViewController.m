@@ -22,9 +22,16 @@
     if (self) {
         // Custom initialization
         self.title = @"Walks";
-        self.walksModel = [[WalksModel alloc] initWithData];
+        self.walksModel = [[WalksModel alloc] initFromServer];
+        
+        // Update the table view when data is returned from the server
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initializedFromServer) name:@"initFromServerFinishedLoading" object:nil];
     }
     return self;
+}
+- (void)initializedFromServer
+{
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad

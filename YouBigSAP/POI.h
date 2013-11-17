@@ -17,5 +17,6 @@
 @property (strong, nonatomic) NSString *pictureLocation;
 @property (strong, nonatomic) NSNumber *latitude;
 @property (strong, nonatomic) NSNumber *longitude;
--(id) initWithLatitude:(double)aLatitude longitude:(double)aLongitude;
+//-(id) initWithLatitude:(double)aLatitude longitude:(double)aLongitude;
+-(id) initWithJSON: (NSDictionary *)JSON;
 @end

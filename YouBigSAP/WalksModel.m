@@ -8,19 +8,35 @@
 
 #import "WalksModel.h"
 #import "Walk.h"
+#import "AFNetworking.h"
 
 @implementation WalksModel
--(id) initWithData
+-(id)initFromServer
 {
     self = [super init];
     if( self )
     {
-        self.walksArray = [[NSArray alloc] initWithObjects:
-                           [[Walk alloc] initWithName:@"Walk one"],
-                           [[Walk alloc] initWithName:@"Walk two"],
-                           [[Walk alloc] initWithName:@"Walk three"],
-                           nil];
+        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        
+        [manager GET:@"http://localhost:8000/walks" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+            // initialize an array of walks
+            NSMutableArray *walks = [[NSMutableArray alloc] init];
+            for(NSDictionary *walkJSON in responseObject)
+            {
+                Walk *aWalk = [[Walk alloc] initWIthJSON:walkJSON];
+                [walks addObject:aWalk];
+            }
+            self.walksArray = walks;
+            
+            // push a global notification
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"initFromServerFinishedLoading" object:nil];
+
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Error: %@", error);
+        }];
     }
     return self;
 }
+
 @end
