@@ -42,6 +42,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
     
     // Set up a scrollview
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
@@ -62,9 +63,16 @@
     walkNameLabel.font = [UIFont boldSystemFontOfSize:20];
     [scrollView addSubview:walkNameLabel];
     
+    // Add a start button
+    UIButton *startButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    startButton.frame = CGRectMake(10, 230, 300, 40);
+    [startButton setTitle:@"Show Map" forState:UIControlStateNormal];
+    [startButton addTarget:self action:@selector(showMap) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView addSubview:startButton];
+    
     // Add a description field
     UITextView *walkDescription = [[UITextView alloc] init];
-    walkDescription.frame = CGRectMake(10, 230, 300, 0);
+    walkDescription.frame = CGRectMake(10, 270, 300, 0);
     walkDescription.scrollEnabled = NO;
     walkDescription.text = self.walk.description;
     [walkDescription sizeToFit];
@@ -75,7 +83,10 @@
 
     [scrollView addSubview:walkDescription];
 }
-
+- (void)showMap
+{
+    NSLog(@"Show Map");
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
