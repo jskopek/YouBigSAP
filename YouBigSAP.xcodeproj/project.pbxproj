@@ -23,6 +23,7 @@
 		C014ABC1183836BB00E7BCB1 /* WalksModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABC0183836BB00E7BCB1 /* WalksModel.m */; };
 		C014ABC418383B6B00E7BCB1 /* WalkOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABC318383B6B00E7BCB1 /* WalkOverviewViewController.m */; };
 		C014ABC718383E3B00E7BCB1 /* Walk.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABC618383E3B00E7BCB1 /* Walk.m */; };
+		C014ABCB1838550200E7BCB1 /* POI.m in Sources */ = {isa = PBXBuildFile; fileRef = C014ABCA1838550200E7BCB1 /* POI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		C014ABC318383B6B00E7BCB1 /* WalkOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkOverviewViewController.m; sourceTree = "<group>"; };
 		C014ABC518383E3B00E7BCB1 /* Walk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Walk.h; sourceTree = "<group>"; };
 		C014ABC618383E3B00E7BCB1 /* Walk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Walk.m; sourceTree = "<group>"; };
+		C014ABC91838550200E7BCB1 /* POI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POI.h; sourceTree = "<group>"; };
+		C014ABCA1838550200E7BCB1 /* POI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 		C014ABC818383E4000E7BCB1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C014ABC91838550200E7BCB1 /* POI.h */,
+				C014ABCA1838550200E7BCB1 /* POI.m */,
 				C014ABBF183836BB00E7BCB1 /* WalksModel.h */,
 				C014ABC0183836BB00E7BCB1 /* WalksModel.m */,
 				C014ABC518383E3B00E7BCB1 /* Walk.h */,
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C014ABCB1838550200E7BCB1 /* POI.m in Sources */,
 				C014ABC718383E3B00E7BCB1 /* Walk.m in Sources */,
 				C014ABC418383B6B00E7BCB1 /* WalkOverviewViewController.m in Sources */,
 				C014ABBE1838364500E7BCB1 /* WalksTableViewController.m in Sources */,

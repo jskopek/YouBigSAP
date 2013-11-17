@@ -7,7 +7,7 @@
 //
 
 #import "WalksModel.h"
-#import "Walk.h";
+#import "Walk.h"
 
 @implementation WalksModel
 -(id) initWithData

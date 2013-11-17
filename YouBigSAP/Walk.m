@@ -7,6 +7,7 @@
 //
 
 #import "Walk.h"
+#import "POI.h"
 
 @implementation Walk
 -(id) initWithName:(NSString *)aName
@@ -15,6 +16,10 @@
     if( self )
     {
         self.name = aName;
+        self.description = @"Placeholder description";
+        self.picture = [UIImage imageNamed:@"walk_placeholder.png"];
+        POI *aPOI = [[POI alloc] initWithLatitude:49.278683 longitude:-123.119016];
+        self.pois = [[NSArray alloc] initWithObjects:aPOI, nil];
     }
     return self;
 }
